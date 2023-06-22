@@ -1,3 +1,4 @@
+import 'package:compucentrounoa/paginas/registrarse.dart';
 import 'package:flutter/material.dart';
 
 class Iniciar extends StatelessWidget {
@@ -38,7 +39,9 @@ class Iniciar extends StatelessWidget {
                   ),
                 ),
 
-                TextButton(onPressed: (){}, child: const Text('¿Registrarse?', style: TextStyle(fontSize: 10),
+                TextButton(onPressed: (){
+                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => const Registrase()));
+                }, child: const Text('¿Registrarse?', style: TextStyle(fontSize: 10),
                 )
                 ),
                 TextButton(onPressed: (){}, child: const Text('¿Olvidaste tu contraseña?', style: TextStyle(fontSize: 10),
